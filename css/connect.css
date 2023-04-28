@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
+
+#threepanel {
+  display: flex;
+  flex-direction: row;
+}
+
+body {
+  background-color: #1b1b1b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+h1 {
+  color: white;
+  font-family: 'Orbitron';
+  font-size: 60px;
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+}
+
+p {
+  color: white;
+  font-family: 'Orbitron';
+  font-size: 24px;
+  text-align: center;
+}
+
+#outerbox {
+  background-color: #1b1b1b;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 650px;
+  height: 620px;
+  margin-top: 20px;
+}
+
+#gameboard {
+  background-color: #3062b6;
+  width: 600px;
+  height: 460px;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  padding-left: 15px;
+  padding-top: 15px;
+  margin-top: 20px;
+}
+
+.hole_empty {
+  background-color: rgb(0, 0, 48);
+  width: 66px;
+  height: 66px;
+  border-radius: 100%;
+  display: grid;
+}
+
+.hole_yellow {
+  background-color: yellow;
+  background-image: radial-gradient(yellow, goldenrod);
+  width: 66px;
+  height: 66px;
+  border-radius: 100%;
+  border: solid 2px goldenrod;
+  display: grid;
+}
+
+.hole_red {
+  background-color: red;
+  background-image: radial-gradient(red, darkred);
+  width: 66px;
+  height: 66px;
+  border-radius: 100%;
+  border: solid 2px darkred;
+  display: grid;
+}
+
+.hole_empty:hover {
+  border: 2px solid white;
+}
+
+.hole_yellow:hover {
+  border: 2px solid white;
+}
+
+.hole_red:hover {
+  border: 2px solid white;
+}
+
+#leftpanel {
+  width: 200px;
+  height: 620px;
+  display: flex;
+  flex-direction: column;
+}
+
+#leftpanelTop {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+}
+
+#leftpanelTop p {
+  color: yellow;
+}
+
+#leftpanelMiddle {
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#leftpanelBottom {
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#rightpanel {
+  width: 200px;
+  height: 620px;
+  display: flex;
+  flex-direction: column;
+}
+
+#rightpanelTop {
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#rightpanelTop p {
+  color: red;
+}
+
+#rightpanelBottom {
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+button {
+  background-color: darkslategray;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width: 180px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+button:hover {
+  background-color: lightslategray;
+}
+
+#playerScore {
+  font-size: 32px;
+}
+
+#computerScore {
+  font-size: 32px;
+}
