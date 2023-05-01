@@ -222,7 +222,7 @@ main{
     height: 440px;
     background: transparent;
     border: 2px solid #fff;
-    border-radius: 20px;
+    border-radius: 10px;
     backdrop-filter: blur(20px);
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
     display: flex;
