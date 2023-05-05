@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Home</title>
+</head>
+<body>
+    <section class="loged-in s-wrapper flex-class">
+        <div class="content flex-class">
+            <div class="container flex-class">
+                <h1 class="welcome-text" id="welcome"></h1>
+                <button class="btn-menu-list" onclick="location.href='chat.html'">Access Live Chat</button>
+                <button class="btn-menu-list" onclick="location.href='games.html'">Access Singleplayer Games</button>
+                <button class="btn-menu-list" onclick="location.href='multiplayer.html'">Access Multiplayer Games</button>
+                <button class="btn-menu-signout" id="signout-button">Sign Out</button>
+            </div>
+        </div>
+    </section>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.4/firebase-auth.js"></script>
+    <script src="./js/restrict.js"></script>
+    <script src="./js/welcome.js"></script>
+    <script src="./js/signout.js"></script>
+</body>
+</html>
